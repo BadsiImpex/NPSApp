@@ -1,5 +1,6 @@
 # NPSApp
 
 Requirements
-1. Php 7.1
-2. JS 6.0
+   - Apache 2.4.39
+   - MySQL 8.0.16
+   - PHP 7.3.5
