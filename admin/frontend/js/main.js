@@ -164,7 +164,22 @@ function loadResponses() {
 
 // load the json on html page
 function respPageUpdate(responses){
+    var respScrn = {
+    responsesListed: {},
+    selectedResponse: [],
+    listContainer: document.querySelector('.respContainer'),
+    listTemplate: document.querySelector('.listTemplate'),
+    } 
+    var listResp;
     for (i in responses) {
+        console.log("list Constainer is: "+respScrn.listContainer);
         console.log('response is: \n' + responses[i].message);
+        listResp = respScrn.listTemplate.cloneNode(true);
+        listResp.classList.remove('.listTemplate');
+        listResp.querySelector('.ratingSelector').textContent = responses[i].rating;
+        listResp.querySelector('.or_no').textContent = responses[i].or_no;
+        listResp.querySelector('.consilierName').textContent = responses[i].Consilier;
+        respScrn.listContainer.appendChild(listResp);
+        
     }
 }

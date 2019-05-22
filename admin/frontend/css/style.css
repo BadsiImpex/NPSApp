@@ -318,8 +318,8 @@ h5 {
 
 .element .infoResponse {
     display: flex;
-    flex-direction: column;
-    //margin-right: 65%;
+    flex-direction: row;
+    margin-right: 65%;
 }
 
 .element .infoResponse p {
@@ -507,3 +507,6 @@ h5 {
     left: 12vw;
 }
 
+#listedResponses {
+    overflow-y: scroll;
+}
