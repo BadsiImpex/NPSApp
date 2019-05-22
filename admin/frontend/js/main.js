@@ -175,11 +175,16 @@ function respPageUpdate(responses){
         console.log("list Constainer is: "+respScrn.listContainer);
         console.log('response is: \n' + responses[i].message);
         listResp = respScrn.listTemplate.cloneNode(true);
-        listResp.classList.remove('.listTemplate');
+        listResp.classList.remove('listTemplate');
+        listResp.setAttribute("id", i);
+        listResp.setAttribute("onclick", "showResp("+i+")");
         listResp.querySelector('.ratingSelector').textContent = responses[i].rating;
         listResp.querySelector('.or_no').textContent = responses[i].or_no;
         listResp.querySelector('.consilierName').textContent = responses[i].Consilier;
         respScrn.listContainer.appendChild(listResp);
-        
     }
+}
+
+function showResp(i) {
+    document.querySelector('.message').textContent = responses[i].message;
 }
