@@ -1,0 +1,89 @@
+
+    <div class="header posAbs" id="respBody">
+    <p>Bine ai venit, utilizator!</p>
+        <img style="width: 120px;" src="frontend/images/account.svg">
+            <div class="header2 posAbs">
+                <img style="width: 22px;" src="frontend/images/responsses.svg">
+                <p>Responses</p>
+            </div>
+    </div>
+    <div class="eightCol mainBody posAbs lightBackground" style="height: 68vh;">
+      
+        <div>
+            <div>
+                <img src="frontend/images/searchMenu.svg" class="searchIcon posAbs">
+                <input class="posAbs align" id="searchFeed" type="text" placeholder="Search feedback" required>
+                 
+            </div>
+                    <div class="posAbs align generalF" id="dropDown1">
+                      <!-- <img src="frontend/images/dropdownMenu.svg" class="menuIcon posAbs"> -->
+                        <span onclick="dropLevel1()">General Feedback</span>
+                        
+                        
+                    </div>
+                    
+                    <div class="posAbs align" id="allFeedback">
+                        <span onclick="dropAllfeed()">All feedback</span>
+                        <!-- <img src="frontend/images/dropdownMenu.svg" class="menuIcon"> -->
+                        
+                    </div>
+                   
+                    <div class="posAbs align" id="customFeedback">
+                       <img src="frontend/images/calendarMenu.svg" class="menuIcon">
+                        <span >Last 365</span>
+                    </div> 
+        </div>
+                <img class="posAbs" src="frontend/images/placeHolder.png" id="accountResp">
+                <div class="accountInfo">
+                    <div class="infoFeedback posAbs">
+                        <h2>Alina Bunica</h2>
+                        <h4>Consilier Tehnic</h4>
+                    </div>
+                    <div class="feedback posAbs">
+                        <h2>Feedback Details</h2>
+                        <ul>
+                            <li>Date:</li>
+                            <li>Profile:</li>
+                            <li>Sentiment:</li>
+                            <li>Reply:</li>
+                        </ul>
+                    </div>
+                <div  class="posAbs" id="firstLine"></div> 
+                </div>
+                    <div cllass="posAbs" id="secondLine"></div>
+                <div class="responses posAbs">
+                            <div class="secondRespons posAbs">
+                                <p class="message" style="color: white;">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy </p>
+                            </div>
+                                <div class="text3 posAbs">
+                                    <p class="cardsP">Comedy SRL</p>
+                                    <p class="cardsP">March 8</p>
+                        </div>
+                </div>
+                    <div class="posAbs" id="thirdLine"></div>
+            
+                    <!-- right container box -->
+                <div class="flex_container posAbs">
+
+                   <div class="element">
+                        <div class="bar"></div>
+                        <div class="infoResponse">
+                            <h4 class="or_no">265458</h4>
+                            <p class="consilierName">Tudor</p>
+                        </div>
+                           
+                    </div>
+
+                   
+
+                </div>
+        </div>  
+
+    <script type="text/javascript" src="frontend/js/main.js"></script>
+    </body>
+</html>
+
+<?php } else {
+echo 'Please Login2';
+}
+?>

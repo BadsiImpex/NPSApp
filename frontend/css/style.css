@@ -1,0 +1,201 @@
+html {
+    height: 100vh;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #fff;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient(#0097DB,#4ADBD0);
+    background: -moz-linear-gradient(#0097DB,#4ADBD0);
+    background: -ms-linear-gradient(#0097DB,#4ADBD0);
+    background: -o-linear-gradient(#0097DB,#4ADBD0);
+    background: linear-gradient(#0097DB,#4ADBD0);
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#logoHeader {
+    height: 100px;
+    width: 100vw;
+    background-color: rgba(0, 151, 219);
+}
+
+#logoHeader img {
+    height: 30px;
+    position: absolute;
+    top: 55px;
+    right: 40px;
+    }
+   
+.screenDisplaySettings {
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+.topDiv {
+    padding-top: 20vh;
+    margin: 0 14vw;
+}
+
+#owl {
+    width: 36vw;
+    height: auto;
+}
+
+#firstP {
+    width: 36vw;
+    font-size: 1rem;
+    color: rgb(0, 151, 219);
+}
+
+#questionBox {
+    background-color: rgb(255, 112, 98);
+    color: white;
+    border-radius: 4px;
+    height: 16vh;
+    width: 80vw;
+    box-shadow: 0px 4px 8px rgba(255, 112, 98, 0.55);
+    font-size: 1.4rem;
+    padding: 0 2vw;
+}
+
+#feedCounter {
+    font-size: 2.5rem;
+    color: rgba(0, 151, 219);
+    margin-top: 50px;
+    padding-bottom: 1vh;
+    line-height: 0px;
+}
+
+#orangeLine {
+    background-color: rgb(255, 112, 98);
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#arrow {
+    width: 10vw;
+    height: auto;
+    padding-top: 10%;
+}
+
+
+.txtBox {
+    color: rgba(0, 151, 219);
+    width: 85vw;
+    height: 50vh;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 151, 219, 0.15);
+    border-radius: 4px 4px 4px 4px;
+    border-color: white;
+    \\code for lines
+    background-attachment: local;
+    background-image:
+        linear-gradient(to right, white 10px, transparent 10px),
+        linear-gradient(to left, white 10px, transparent 10px),
+        repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+    line-height: 31px;
+    padding: 8px 10px;
+}
+
+.paddingAdj {
+    padding: 0vh 5vw 0vh 5vw;
+    margin-top: 20vh;
+}
+
+.secondMesage {
+    font-size: 1.8rem;
+    color: rgb(0, 151, 219);
+    margin-bottom: 5px;
+}
+
+#sendButton {
+    width: 85vw;
+    height: 64px;
+    margin: 7px 0px 0px 0px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 151, 219);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 4px 8px rgba(0, 151, 219, 0.15);
+}
+
+.ava2 {
+    height: 25vh;
+    padding-top: 20vh;
+}
+
+.thanks {
+    height: 25vh;
+    padding-top: 6vh;
+}
+
+@media only screen and (min-width: 700px) {
+
+.screenDisplaySettings  {
+    background-color: #fff;
+    width: 72vw;
+    height: 95vh;
+    left: 14vw;
+    }
+.topDiv {
+    padding-top: 14vh;
+}
+#owl {
+    width: 20vw;
+    height: auto;
+}
+
+#firstP {
+    font-size: 2.0rem;
+}
+    
+#questionBox {
+    font-size: 1.5rem;
+    height: 16vh;
+    width: 50vw;
+}
+#arrow {
+    width: 5vw;
+    padding-top: 3vh;
+}
+
+.paddingAdj {
+    padding: 0vh 11vw 0vh 11vw;
+    margin-top: 20vh;
+}
+.txtBox {
+    width: 50vw;
+    height: 50vh;
+    padding: 8px 10px;
+}
+#sendButton {
+    width: 50vw;
+}
+
+.ava2 {
+    padding-top: 14vh;
+}
+
+}
+

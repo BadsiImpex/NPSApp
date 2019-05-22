@@ -1,0 +1,94 @@
+
+    <div class="header posAbs">
+    <p>Bine ai venit, utilizator!</p>
+        <img style="width: 120px;" src="frontend/images/account.svg">
+            <div class="header2 posAbs">
+                <img style="width: 22px;" src="frontend/images/performance.svg">
+                <p>Performance</p>
+            </div>
+    </div>
+    
+    <div class="eightCol mainBody posAbs lightBackground" style="height: 68vh;">
+        <button class="posAbs ratingSelectorButton">NPS</button>
+         <div class="posAbs">
+             <div class="posAbs menu dropStyle" id="dropDown1">
+                <p onclick="dropLevel1()">GENERAL</p>
+             </div>
+                <div id="dropDown2" class="posAbs menu">
+                   
+                </div> 
+                <div id="dropDown3">
+                    
+                </div>
+             <div id="dropDown4">
+                 
+             </div>
+        </div>
+        <div class="threeCol posAbs scoreCard">
+            <div class="flexHorizontal">    
+                <div>
+                    <h5>Net promoter score</h5>
+                    <p id="scoreDiv" class="npsP">55.53</p>
+                </div>
+                <div>
+                    <h5>Responses</h5>
+                    <p id="resp" class="npsP">122</p>
+                </div>
+            </div>
+            <div class="flexHorizontal">
+                <div class="cards verticalCenter" style="background-color: #00B92E;">
+                    <img src="frontend/images/promoter.svg" style="width: 2.5vw; height:2.5vw;">
+                    <h4 id="promoter">55.7</h4>
+                    <p>PROMOTER</p>
+                </div>
+              <div class="cards verticalCenter" style="background-color: #FBD54F;">
+                    <img src="frontend/images/neutral.svg" style="width: 2.5vw; height:2.5vw;">
+                    <h4 id="neutral">55.7</h4>
+                    <p>NEUTRAL</p>
+                </div>
+                <div class="cards verticalCenter" style="background-color: #FF7062;">
+                    <img src="frontend/images/detractor.svg" style="width: 2.5vw; height:2.5vw;">
+                    <h4 id="detractor">55.7</h4>
+                    <p>DETRACTOR</p>
+                </div>
+            </div> 
+        </div>
+        <div class="posAbs">
+            <img class="posAbs" src="frontend/images/filters.svg" style="width: 10px; top: 82px; left: 57vw">
+            <p onclick="showFilters()" id="filters">FILTERS</p>
+        </div>
+          <div onlick="showFilters()" class="posAbs" id="clr">
+        <div>
+        <ul id="graphFilters">
+          <li onclick="closeFilters(tdData,lblTdData)">
+                Today</li>
+            <li onclick="closeFilters(yestData,lblYestData)">
+                Yesterday</li>
+            <li onclick="closeFilters(weekData,lblWeekData)">
+               Last Week</li>
+            <li onclick="closeFilters(monthData,lblMonthData)">
+               Last Month</li>
+            <li onclick="closeFilters(qtrData,lblQtrData)">
+               Last Quarter</li>
+            <li onclick="closeFilters(yearData,lblYearData)">
+               Last Year</li>
+            <li onclick="closeFilters(allData,lblAllData)">
+               Lifetime</li>
+        </ul>
+        </div>
+        
+    </div>
+        <div class="posAbs">
+        <p class="graphP posAbs">Overview</p>
+        <canvas class="posAbs" id="perfmGraph" width="480" height="260"></canvas>
+        </div>
+    </div>
+    <script type="text/javascript" src="frontend/js/main.js"></script>
+    
+</body>
+</html>
+
+<?php } else {
+echo 'Please Login2';
+}
+?>
