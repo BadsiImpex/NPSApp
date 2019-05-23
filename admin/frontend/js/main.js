@@ -187,4 +187,7 @@ function respPageUpdate(responses){
 
 function showResp(i) {
     document.querySelector('.message').textContent = responses[i].message;
+    document.querySelector('.cardRating').textContent = "Rating: "+ responses[i].rating;
+    document.querySelector('.cardOr_no').textContent = "O.R. No.: "+responses[i].or_no;
+    document.querySelector('.cardConsilier').textContent = "Consilier: "+responses[i].Consilier;
 }
